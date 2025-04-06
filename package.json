@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "api-server": "json-server --watch database.json --port 3001",
+    "dev:all": "npm run api-server & npm run dev"
   },
   "dependencies": {
     "@ant-design/nextjs-registry": "^1.0.2",
