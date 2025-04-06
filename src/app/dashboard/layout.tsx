@@ -65,7 +65,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
 			</Sider>
 			<Layout>
 				<Header
-					className="flex justify-between "
+					className="flex justify-between !pl-0 !pr-1 "
 					style={{ background: colorBgContainer }}
 				>
 					<Button
