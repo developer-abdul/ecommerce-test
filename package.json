@@ -11,6 +11,7 @@
     "dev:all": "npm run api-server & npm run dev"
   },
   "dependencies": {
+    "@ant-design/icons": "5.x",
     "@ant-design/nextjs-registry": "^1.0.2",
     "@ant-design/v5-patch-for-react-19": "^1.0.3",
     "antd": "^5.24.6",
