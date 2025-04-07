@@ -1,9 +1,12 @@
 'use client';
 
-import { Card, Col, Empty, Row, Typography } from 'antd';
+import { Button, Card, Col, Empty, Row, Table, Typography } from 'antd';
 import { Tree } from 'antd';
 import React, { useState } from 'react';
-import type { GetProps, TreeDataNode } from 'antd';
+import type { GetProp, GetProps, TableProps, TreeDataNode } from 'antd';
+import { EyeOutlined } from '@ant-design/icons';
+import { Product } from '@/types';
+import { SorterResult } from 'antd/es/table/interface';
 
 type DirectoryTreeProps = GetProps<typeof Tree.DirectoryTree>;
 
@@ -12,34 +15,103 @@ const { DirectoryTree } = Tree;
 
 const treeData: TreeDataNode[] = [
 	{
-		title: 'parent 0',
+		title: 'Catergory 1',
 		key: '0-0',
-		children: [
-			{ title: 'leaf 0-0', key: '0-0-0', isLeaf: true },
-			{ title: 'leaf 0-1', key: '0-0-1', isLeaf: true },
-		],
 	},
 	{
-		title: 'parent 1',
+		title: 'Catergory 2',
 		key: '0-1',
-		children: [
-			{ title: 'leaf 1-0', key: '0-1-0', isLeaf: true },
-			{ title: 'leaf 1-1', key: '0-1-1', isLeaf: true },
-		],
 	},
 ];
+
+type TablePaginationConfig = Exclude<
+	GetProp<TableProps, 'pagination'>,
+	boolean
+>;
+interface TableParams {
+	pagination?: TablePaginationConfig;
+	sortField?: SorterResult<unknown>['field'];
+	sortOrder?: SorterResult<unknown>['order'];
+	filters?: Parameters<GetProp<TableProps, 'onChange'>>[1];
+}
 
 const DashboardProductsPage = () => {
 	const [selectedCategoryId, setSelectedCategoryId] = useState<string | null>(
 		null
 	);
 	const [loading, setLoading] = useState(false);
+	const [tableParams, setTableParams] = useState<TableParams>({
+		pagination: {
+			current: 1,
+			pageSize: 10,
+		},
+	});
 
 	const onSelect: DirectoryTreeProps['onSelect'] = (keys: React.Key[]) => {
 		if (keys.length > 0) {
 			setSelectedCategoryId(keys[0] as string);
 		}
 		console.log('Trigger Select', keys);
+	};
+
+	const columns: TableProps<Product>['columns'] = [
+		{
+			title: 'ID',
+			dataIndex: 'id',
+			key: 'id',
+			sorter: true,
+		},
+		{
+			title: 'Name',
+			dataIndex: 'name',
+			key: 'name',
+			sorter: true,
+		},
+		{
+			title: 'Category',
+			dataIndex: 'category',
+			key: 'category',
+			sorter: true,
+		},
+		{
+			title: 'Last Updated',
+			dataIndex: 'lastUpdated',
+			key: 'lastUpdated',
+			sorter: true,
+		},
+		{
+			title: 'Actions',
+			key: 'actions',
+			render: (_: unknown, record: Product) => (
+				<Button
+					type="primary"
+					icon={<EyeOutlined />}
+					onClick={() => {
+						console.log(record);
+					}}
+				>
+					View
+				</Button>
+			),
+		},
+	];
+
+	const handleTableChange: TableProps<Product>['onChange'] = (
+		pagination,
+		filters,
+		sorter
+	) => {
+		setTableParams({
+			pagination,
+			filters,
+			sortOrder: Array.isArray(sorter) ? undefined : sorter.order,
+			sortField: Array.isArray(sorter) ? undefined : sorter.field,
+		});
+
+		// `dataSource` is useless since `pageSize` changed
+		if (pagination.pageSize !== tableParams.pagination?.pageSize) {
+			//   setData([]);
+		}
 	};
 
 	return (
@@ -51,7 +123,6 @@ const DashboardProductsPage = () => {
 						{treeData.length > 0 ? (
 							<DirectoryTree
 								multiple
-								draggable
 								defaultExpandAll
 								onSelect={onSelect}
 								treeData={treeData}
@@ -65,13 +136,20 @@ const DashboardProductsPage = () => {
 					<Card
 						title={
 							selectedCategoryId && !loading
-								? 'Products'
+								? 'Product Listings'
 								: 'Please select a category'
 						}
 					>
 						{selectedCategoryId ? (
 							<>
-								<div>Products</div>
+								<Table<Product>
+									// dataSource={data}
+									rowKey="id"
+									columns={columns}
+									pagination={tableParams.pagination}
+									loading={loading}
+									onChange={handleTableChange}
+								/>
 							</>
 						) : (
 							<Empty description="Select a category to view products" />
