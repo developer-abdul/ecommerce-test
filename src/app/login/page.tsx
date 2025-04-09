@@ -1,9 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Form, Input, message, Card, Typography } from 'antd';
 import { useRouter } from 'next/navigation';
+import { signIn, useSession } from 'next-auth/react';
 
 type LoginFormValues = {
 	email: string;
@@ -15,12 +16,31 @@ const { Title, Text } = Typography;
 const LoginPage = () => {
 	const [loading, setLoading] = useState(false);
 	const router = useRouter();
+	const { status } = useSession();
+
+	useEffect(() => {
+		if (status === 'authenticated') {
+			router.push('/dashboard');
+		}
+	}, [status, router]);
 
 	const onFinish = async (values: LoginFormValues) => {
 		try {
 			setLoading(true);
 			const { email, password } = values;
-			console.log('Submit values', email, password);
+
+			const result = await signIn('credentials', {
+				email,
+				password,
+				redirect: false,
+			});
+
+			if (result?.error) {
+				message.error('Invalid email or password');
+			} else {
+				message.success('Login successful');
+				router.push('/dashboard');
+			}
 
 			// Need to work on the NextAuth Login
 		} catch (error) {
@@ -41,12 +61,12 @@ const LoginPage = () => {
 
 				<Form name="login" onFinish={onFinish}>
 					<Form.Item
-						name="username"
-						rules={[{ required: true, message: 'Please input your Username!' }]}
+						name="email"
+						rules={[{ required: true, message: 'Please input your Email!' }]}
 					>
 						<Input
 							prefix={<UserOutlined />}
-							placeholder="Username"
+							placeholder="email"
 							size="large"
 						/>
 					</Form.Item>
@@ -62,7 +82,13 @@ const LoginPage = () => {
 						/>
 					</Form.Item>
 					<Form.Item>
-						<Button block type="primary" htmlType="submit" size="large">
+						<Button
+							block
+							type="primary"
+							htmlType="submit"
+							size="large"
+							loading={loading}
+						>
 							Log in
 						</Button>
 					</Form.Item>
