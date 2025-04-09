@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-commerce Back Office
+
+## The purpose/use case of this back office is:
+- Login to the back office with email and password
+- See and navigate a product category tree
+- See a list of products belonging to a specific category in pages of 5, 10, 20, 50 elements per page
+- Sort product list by different fields (e.g., id, name) in ascending/descending order
+- View the product information on a separate product details page
+- Add/modify attributes of a product. Possible attribute types: "number", "text", "url", "tags", "boolean"
+- See the last modified product in a custom widget on top of the page (custom here means that you have to implement a new component, not using the one that the component library of your choice provides)
+- Logout from the back office
+
+## Technology requirements
+React and Typescript are mandatory requirements. Apart from this, you can use any libraries, frameworks, task runners, and build processors. Usage of AntDesign is a plus
+
+## Tech Stack
+
+- **Frontend**: Next.js 15, React 19, TypeScript, Ant Design, Tailwind CSS, NextAuth.js, Redux Toolkit
+- **API**: JSON Server for API mocking
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the repository**
+   ```bash
+   git clone [your-repo-url]
+   cd ecommerce-test
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Install dependencies**
+   ```bash
+   pnpm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Start the development environment**
+   ```bash
+   # Start both the Next.js app and JSON Server
+   pnpm run dev:all
+   ```
