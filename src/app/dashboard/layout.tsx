@@ -12,7 +12,7 @@ import { Button, Layout, Menu, theme } from 'antd';
 import Link from 'next/link';
 import { signOut } from 'next-auth/react';
 import { usePathname, useRouter } from 'next/navigation';
-
+import LastModifiedProductComponent from '@/components/LastModifiedProductComponent';
 const { Header, Sider, Content } = Layout;
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
@@ -78,6 +78,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
 						}}
 					/>
 					<div className="flex items-center gap-2">
+						<LastModifiedProductComponent />
 						<Button
 							type="primary"
 							onClick={handleLogout}
