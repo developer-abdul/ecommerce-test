@@ -33,16 +33,6 @@
       "id": "4",
       "name": "Clothing",
       "parent_id": null
-    },
-    {
-      "id": "5",
-      "name": "Men",
-      "parent_id": 4
-    },
-    {
-      "id": "6",
-      "name": "Women",
-      "parent_id": 4
     }
   ],
   "products": [
@@ -84,12 +74,6 @@
           "name": "In Stock",
           "type": "boolean",
           "value": true
-        },
-        {
-          "id": "attr_1743853920617",
-          "name": "Color",
-          "type": "tags",
-          "value": []
         }
       ],
       "createdAt": "2023-01-01T00:00:00Z",
