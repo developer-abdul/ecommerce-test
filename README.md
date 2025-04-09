@@ -34,5 +34,5 @@ React and Typescript are mandatory requirements. Apart from this, you can use an
 3. **Start the development environment**
    ```bash
    # Start both the Next.js app and JSON Server
-   pnpm run dev:all
+   pnpm dev:all
    ```
