@@ -1,16 +1,17 @@
+import { Product } from '@/types';
 import { baseApi } from '../..';
 import { Endpoints } from '../../endpoints';
 
 const productsApi = baseApi.injectEndpoints({
 	endpoints: (build) => ({
-		getProducts: build.query({
+		getProducts: build.query<Product[], void>({
 			query: () => ({
 				url: `${Endpoints.Products}`,
 			}),
 			providesTags: ['Products'],
 		}),
 
-		getProduct: build.query({
+		getProduct: build.query<Product, { id: string }>({
 			query: ({ id }) => ({
 				url: `${Endpoints.Products}/${id}`,
 			}),

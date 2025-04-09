@@ -42,7 +42,6 @@ const LoginPage = () => {
 				router.push('/dashboard');
 			}
 
-			// Need to work on the NextAuth Login
 		} catch (error) {
 			message.error('An error occurred during login');
 			console.error(error);

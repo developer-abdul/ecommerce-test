@@ -1,4 +1,4 @@
 export const Endpoints = {
-	Auth: '/users',
 	Products: '/products',
+	Categories: '/categories',
 };

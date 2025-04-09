@@ -10,7 +10,7 @@ import {
 } from '@ant-design/icons';
 import { Button, Layout, Menu, theme } from 'antd';
 import Link from 'next/link';
-import { useSession, signOut } from 'next-auth/react';
+import { signOut } from 'next-auth/react';
 import { usePathname, useRouter } from 'next/navigation';
 
 const { Header, Sider, Content } = Layout;
@@ -18,7 +18,6 @@ const { Header, Sider, Content } = Layout;
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
 	const router = useRouter();
 	const pathname = usePathname();
-	const { data: session } = useSession();
 
 	const [collapsed, setCollapsed] = useState(false);
 	const {
