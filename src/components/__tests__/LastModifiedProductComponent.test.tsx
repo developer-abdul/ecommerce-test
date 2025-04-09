@@ -8,18 +8,6 @@ jest.mock('@/store/api/splits/products', () => ({
 	useGetProductsQuery: jest.fn(),
 }));
 
-jest.mock('next/link', () => {
-	const MockLink = ({
-		children,
-		href,
-	}: {
-		children: React.ReactNode;
-		href: string;
-	}) => <a href={href}>{children}</a>;
-	MockLink.displayName = 'Link';
-	return MockLink;
-});
-
 describe('LastModifiedProductComponent', () => {
 	const mockProducts: Product[] = [
 		{
