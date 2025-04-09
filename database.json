@@ -49,7 +49,7 @@
     {
       "id": "1",
       "name": "MacBook Pro",
-      "category_id": "5",
+      "category_id": "2",
       "attributes": [
         {
           "id": "1",
@@ -98,7 +98,7 @@
     {
       "id": "2",
       "name": "Dell XPS 13",
-      "category_id": "5",
+      "category_id": "2",
       "attributes": [
         {
           "id": "6",
