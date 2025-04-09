@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import '@ant-design/v5-patch-for-react-19';
 import './globals.css';
-import { Providers } from '@/components/Providers';
+import { Providers } from '@/store/provider';
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
