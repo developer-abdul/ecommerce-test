@@ -12,5 +12,131 @@
       "email": "admin2@example.com",
       "password": "password123"
     }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Electronics",
+      "parent_id": null
+    },
+    {
+      "id": "2",
+      "name": "Computers",
+      "parent_id": 1
+    },
+    {
+      "id": "3",
+      "name": "Phones",
+      "parent_id": 1
+    },
+    {
+      "id": "4",
+      "name": "Clothing",
+      "parent_id": null
+    },
+    {
+      "id": "5",
+      "name": "Men",
+      "parent_id": 4
+    },
+    {
+      "id": "6",
+      "name": "Women",
+      "parent_id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "MacBook Pro",
+      "category_id": "5",
+      "attributes": [
+        {
+          "id": "1",
+          "name": "Price",
+          "type": "number",
+          "value": 1299
+        },
+        {
+          "id": "2",
+          "name": "Description",
+          "type": "text",
+          "value": "Powerful laptop for professionals"
+        },
+        {
+          "id": "3",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/macbook-pro"
+        },
+        {
+          "id": "4",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "laptop",
+            "apple",
+            "premium"
+          ]
+        },
+        {
+          "id": "5",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "id": "attr_1743853920617",
+          "name": "Color",
+          "type": "tags",
+          "value": []
+        }
+      ],
+      "createdAt": "2023-01-01T00:00:00Z",
+      "updatedAt": "2025-04-05T11:52:00.617Z"
+    },
+    {
+      "id": "2",
+      "name": "Dell XPS 13",
+      "category_id": "5",
+      "attributes": [
+        {
+          "id": "6",
+          "name": "Price",
+          "type": "number",
+          "value": 999
+        },
+        {
+          "id": "7",
+          "name": "Description",
+          "type": "text",
+          "value": "Ultra-thin and light laptop"
+        },
+        {
+          "id": "8",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/dell-xps-13"
+        },
+        {
+          "id": "9",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "laptop",
+            "dell",
+            "ultrabook"
+          ]
+        },
+        {
+          "id": "10",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2023-02-01T00:00:00Z",
+      "updatedAt": "2023-02-10T00:00:00Z"
+    }
   ]
 }
