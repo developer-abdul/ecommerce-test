@@ -7,7 +7,7 @@
       "password": "password123"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Admin User 2",
       "email": "admin2@example.com",
       "password": "password123"
@@ -121,6 +121,577 @@
       ],
       "createdAt": "2023-02-01T00:00:00Z",
       "updatedAt": "2023-02-10T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "name": "iPhone 15 Pro",
+      "category_id": "3",
+      "attributes": [
+        {
+          "id": "11",
+          "name": "Price",
+          "type": "number",
+          "value": 999
+        },
+        {
+          "id": "12",
+          "name": "Description",
+          "type": "text",
+          "value": "Latest iPhone with A17 Pro chip and titanium design"
+        },
+        {
+          "id": "13",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/iphone-15-pro"
+        },
+        {
+          "id": "14",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "smartphone",
+            "apple",
+            "premium",
+            "5G"
+          ]
+        },
+        {
+          "id": "15",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-01-15T00:00:00Z",
+      "updatedAt": "2024-01-15T00:00:00Z"
+    },
+    {
+      "id": "4",
+      "name": "Samsung Galaxy S24 Ultra",
+      "category_id": "3",
+      "attributes": [
+        {
+          "id": "16",
+          "name": "Price",
+          "type": "number",
+          "value": 1199
+        },
+        {
+          "id": "17",
+          "name": "Description",
+          "type": "text",
+          "value": "Premium Android flagship with S Pen support"
+        },
+        {
+          "id": "18",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/samsung-s24-ultra"
+        },
+        {
+          "id": "19",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "smartphone",
+            "samsung",
+            "premium",
+            "5G"
+          ]
+        },
+        {
+          "id": "20",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-01-20T00:00:00Z",
+      "updatedAt": "2024-01-20T00:00:00Z"
+    },
+    {
+      "id": "5",
+      "name": "Google Pixel 8 Pro",
+      "category_id": "3",
+      "attributes": [
+        {
+          "id": "21",
+          "name": "Price",
+          "type": "number",
+          "value": 899
+        },
+        {
+          "id": "22",
+          "name": "Description",
+          "type": "text",
+          "value": "Google's flagship with advanced AI features"
+        },
+        {
+          "id": "23",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/pixel-8-pro"
+        },
+        {
+          "id": "24",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "smartphone",
+            "google",
+            "premium",
+            "5G"
+          ]
+        },
+        {
+          "id": "25",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-01-25T00:00:00Z",
+      "updatedAt": "2024-01-25T00:00:00Z"
+    },
+    {
+      "id": "6",
+      "name": "Lenovo ThinkPad X1 Carbon",
+      "category_id": "2",
+      "attributes": [
+        {
+          "id": "26",
+          "name": "Price",
+          "type": "number",
+          "value": 1499
+        },
+        {
+          "id": "27",
+          "name": "Description",
+          "type": "text",
+          "value": "Business laptop with exceptional build quality"
+        },
+        {
+          "id": "28",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/thinkpad-x1-carbon"
+        },
+        {
+          "id": "29",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "laptop",
+            "lenovo",
+            "business",
+            "premium"
+          ]
+        },
+        {
+          "id": "30",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-02-01T00:00:00Z",
+      "updatedAt": "2024-02-01T00:00:00Z"
+    },
+    {
+      "id": "7",
+      "name": "HP Spectre x360",
+      "category_id": "2",
+      "attributes": [
+        {
+          "id": "31",
+          "name": "Price",
+          "type": "number",
+          "value": 1299
+        },
+        {
+          "id": "32",
+          "name": "Description",
+          "type": "text",
+          "value": "Convertible laptop with premium design"
+        },
+        {
+          "id": "33",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/hp-spectre-x360"
+        },
+        {
+          "id": "34",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "laptop",
+            "hp",
+            "convertible",
+            "premium"
+          ]
+        },
+        {
+          "id": "35",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-02-05T00:00:00Z",
+      "updatedAt": "2024-02-05T00:00:00Z"
+    },
+    {
+      "id": "8",
+      "name": "Men's Classic Fit Dress Shirt",
+      "category_id": "4",
+      "attributes": [
+        {
+          "id": "36",
+          "name": "Price",
+          "type": "number",
+          "value": 49.99
+        },
+        {
+          "id": "37",
+          "name": "Description",
+          "type": "text",
+          "value": "Premium cotton dress shirt for formal occasions"
+        },
+        {
+          "id": "38",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/mens-dress-shirt"
+        },
+        {
+          "id": "39",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "formal",
+            "shirt",
+            "cotton"
+          ]
+        },
+        {
+          "id": "40",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-02-10T00:00:00Z",
+      "updatedAt": "2024-02-10T00:00:00Z"
+    },
+    {
+      "id": "9",
+      "name": "Women's Blazer",
+      "category_id": "4",
+      "attributes": [
+        {
+          "id": "41",
+          "name": "Price",
+          "type": "number",
+          "value": 89.99
+        },
+        {
+          "id": "42",
+          "name": "Description",
+          "type": "text",
+          "value": "Professional blazer for business casual wear"
+        },
+        {
+          "id": "43",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/womens-blazer"
+        },
+        {
+          "id": "44",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "formal",
+            "blazer",
+            "business",
+            "professional"
+          ]
+        },
+        {
+          "id": "45",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-02-15T00:00:00Z",
+      "updatedAt": "2024-02-15T00:00:00Z"
+    },
+    {
+      "id": "10",
+      "name": "Sony WH-1000XM5",
+      "category_id": "1",
+      "attributes": [
+        {
+          "id": "46",
+          "name": "Price",
+          "type": "number",
+          "value": 399
+        },
+        {
+          "id": "47",
+          "name": "Description",
+          "type": "text",
+          "value": "Premium noise-cancelling headphones"
+        },
+        {
+          "id": "48",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/sony-wh1000xm5"
+        },
+        {
+          "id": "49",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "headphones",
+            "audio",
+            "wireless",
+            "premium"
+          ]
+        },
+        {
+          "id": "50",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-02-20T00:00:00Z",
+      "updatedAt": "2024-02-20T00:00:00Z"
+    },
+    {
+      "id": "11",
+      "name": "Samsung 65\" QLED 4K TV",
+      "category_id": "1",
+      "attributes": [
+        {
+          "id": "51",
+          "name": "Price",
+          "type": "number",
+          "value": 1299
+        },
+        {
+          "id": "52",
+          "name": "Description",
+          "type": "text",
+          "value": "Premium QLED display with HDR support"
+        },
+        {
+          "id": "53",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/samsung-qled-tv"
+        },
+        {
+          "id": "54",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "tv",
+            "4k",
+            "qled",
+            "smart-tv"
+          ]
+        },
+        {
+          "id": "55",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-02-25T00:00:00Z",
+      "updatedAt": "2024-02-25T00:00:00Z"
+    },
+    {
+      "id": "12",
+      "name": "Casual Denim Jeans",
+      "category_id": "4",
+      "attributes": [
+        {
+          "id": "56",
+          "name": "Price",
+          "type": "number",
+          "value": 59.99
+        },
+        {
+          "id": "57",
+          "name": "Description",
+          "type": "text",
+          "value": "Comfortable stretch denim jeans for everyday wear"
+        },
+        {
+          "id": "58",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/casual-jeans"
+        },
+        {
+          "id": "59",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "jeans",
+            "casual",
+            "denim",
+            "comfort"
+          ]
+        },
+        {
+          "id": "60",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-03-01T00:00:00Z",
+      "updatedAt": "2024-03-01T00:00:00Z"
+    },
+    {
+      "id": "13",
+      "name": "ASUS ROG Gaming Laptop",
+      "category_id": "2",
+      "attributes": [
+        {
+          "id": "61",
+          "name": "Price",
+          "type": "number",
+          "value": 1799
+        },
+        {
+          "id": "62",
+          "name": "Description",
+          "type": "text",
+          "value": "High-performance gaming laptop with RTX graphics"
+        },
+        {
+          "id": "63",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/asus-rog-laptop"
+        },
+        {
+          "id": "64",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "laptop",
+            "gaming",
+            "asus",
+            "premium"
+          ]
+        },
+        {
+          "id": "65",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-03-05T00:00:00Z",
+      "updatedAt": "2024-03-05T00:00:00Z"
+    },
+    {
+      "id": "14",
+      "name": "OnePlus 12",
+      "category_id": "3",
+      "attributes": [
+        {
+          "id": "66",
+          "name": "Price",
+          "type": "number",
+          "value": 699
+        },
+        {
+          "id": "67",
+          "name": "Description",
+          "type": "text",
+          "value": "Flagship killer with Hasselblad cameras"
+        },
+        {
+          "id": "68",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/oneplus-12"
+        },
+        {
+          "id": "69",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "smartphone",
+            "oneplus",
+            "premium",
+            "5G"
+          ]
+        },
+        {
+          "id": "70",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-03-10T00:00:00Z",
+      "updatedAt": "2024-03-10T00:00:00Z"
+    },
+    {
+      "id": "15",
+      "name": "Smart Watch Series 8",
+      "category_id": "1",
+      "attributes": [
+        {
+          "id": "71",
+          "name": "Price",
+          "type": "number",
+          "value": 399
+        },
+        {
+          "id": "72",
+          "name": "Description",
+          "type": "text",
+          "value": "Advanced fitness tracking and health monitoring"
+        },
+        {
+          "id": "73",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/smart-watch-8"
+        },
+        {
+          "id": "74",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "watch",
+            "wearable",
+            "fitness",
+            "smart"
+          ]
+        },
+        {
+          "id": "75",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-03-15T00:00:00Z",
+      "updatedAt": "2024-03-15T00:00:00Z"
     }
   ]
 }
