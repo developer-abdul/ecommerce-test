@@ -120,9 +120,11 @@ const DashboardProductsPage = () => {
 		},
 		{
 			title: 'Last Updated',
-			dataIndex: 'lastUpdated',
-			key: 'lastUpdated',
-			sorter: (a, b) => new Date(a.updatedAt).getTime() - new Date(b.updatedAt).getTime(),
+			dataIndex: 'updatedAt',
+			key: 'updatedAt',
+			render: (date: string) => new Date(date).toLocaleDateString(),
+			sorter: (a, b) =>
+				new Date(a.updatedAt).getTime() - new Date(b.updatedAt).getTime(),
 			sortDirections: ['ascend', 'descend'],
 		},
 		{
