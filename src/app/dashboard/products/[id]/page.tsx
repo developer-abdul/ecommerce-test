@@ -19,7 +19,6 @@ import {
 	Space,
 	Tag,
 	Typography,
-	message,
 	Switch,
 	InputNumber,
 	Divider,

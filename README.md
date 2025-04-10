@@ -28,11 +28,16 @@ React and Typescript are mandatory requirements. Apart from this, you can use an
 
 2. **Install dependencies**
    ```bash
-   pnpm install
+   npm install or npm install --force 
    ```
 
 3. **Start the development environment**
    ```bash
    # Start both the Next.js app and JSON Server
-   pnpm dev:all
+   npm run dev:all
    ```
+
+
+## Limitation
+
+The Dashboard is not fully reponsive on mobile device

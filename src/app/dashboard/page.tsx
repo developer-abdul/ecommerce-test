@@ -13,9 +13,7 @@ const DashboardPage = () => {
 	const router = useRouter();
 	const { data: session } = useSession();
 
-	const { data: products, isLoading: productsLoading } = useGetProductsQuery(
-		{}
-	);
+	const { data: products, isLoading: productsLoading } = useGetProductsQuery();
 
 	const { data: categories, isLoading: categoriesLoading } =
 		useGetCategoriesQuery();
