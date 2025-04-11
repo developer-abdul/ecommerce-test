@@ -29,12 +29,22 @@ React and Typescript are mandatory requirements. Apart from this, you can use an
 2. **Install dependencies**
    ```bash
    npm install or npm install --force 
+   # include the force only when some library does not update due to versioning restrictions
    ```
+   
 
 3. **Start the development environment**
    ```bash
    # Start both the Next.js app and JSON Server
    npm run dev:all
+   ```
+
+   ```bash
+   # If you face issues running both run the api and dev seperately in 2 different terminals
+   # First stop the running services or kill them
+   # Then run the below commands
+   npm run api-server
+   npm run dev
    ```
 
 

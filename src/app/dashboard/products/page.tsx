@@ -44,7 +44,7 @@ const DashboardProductsPage = () => {
 	const [tableParams, setTableParams] = useState<TableParams>({
 		pagination: {
 			current: 1,
-			pageSize: 10,
+			pageSize: 5,
 			pageSizeOptions: ['5', '10', '20', '50'],
 			showSizeChanger: true,
 		},

@@ -692,6 +692,446 @@
       ],
       "createdAt": "2024-03-15T00:00:00Z",
       "updatedAt": "2024-03-15T00:00:00Z"
+    },
+    {
+      "id": "16",
+      "name": "Bose QuietComfort Ultra",
+      "category_id": "1",
+      "attributes": [
+        {
+          "id": "76",
+          "name": "Price",
+          "type": "number",
+          "value": 429
+        },
+        {
+          "id": "77",
+          "name": "Description",
+          "type": "text",
+          "value": "Premium noise-cancelling headphones with immersive audio"
+        },
+        {
+          "id": "78",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/bose-qc-ultra"
+        },
+        {
+          "id": "79",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "headphones",
+            "audio",
+            "wireless",
+            "premium"
+          ]
+        },
+        {
+          "id": "80",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-03-20T00:00:00Z",
+      "updatedAt": "2024-03-20T00:00:00Z"
+    },
+    {
+      "id": "17",
+      "name": "LG OLED C3 77\"",
+      "category_id": "1",
+      "attributes": [
+        {
+          "id": "81",
+          "name": "Price",
+          "type": "number",
+          "value": 2499
+        },
+        {
+          "id": "82",
+          "name": "Description",
+          "type": "text",
+          "value": "Premium OLED TV with perfect blacks and infinite contrast"
+        },
+        {
+          "id": "83",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/lg-oled-c3"
+        },
+        {
+          "id": "84",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "tv",
+            "4k",
+            "oled",
+            "smart-tv"
+          ]
+        },
+        {
+          "id": "85",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-03-25T00:00:00Z",
+      "updatedAt": "2024-03-25T00:00:00Z"
+    },
+    {
+      "id": "18",
+      "name": "Microsoft Surface Laptop 5",
+      "category_id": "2",
+      "attributes": [
+        {
+          "id": "86",
+          "name": "Price",
+          "type": "number",
+          "value": 1299
+        },
+        {
+          "id": "87",
+          "name": "Description",
+          "type": "text",
+          "value": "Premium Windows laptop with touch display"
+        },
+        {
+          "id": "88",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/surface-laptop-5"
+        },
+        {
+          "id": "89",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "laptop",
+            "microsoft",
+            "premium",
+            "touch"
+          ]
+        },
+        {
+          "id": "90",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-04-01T00:00:00Z",
+      "updatedAt": "2024-04-01T00:00:00Z"
+    },
+    {
+      "id": "19",
+      "name": "Razer Blade 18",
+      "category_id": "2",
+      "attributes": [
+        {
+          "id": "91",
+          "name": "Price",
+          "type": "number",
+          "value": 2999
+        },
+        {
+          "id": "92",
+          "name": "Description",
+          "type": "text",
+          "value": "Ultimate gaming laptop with 18-inch display"
+        },
+        {
+          "id": "93",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/razer-blade-18"
+        },
+        {
+          "id": "94",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "laptop",
+            "gaming",
+            "razer",
+            "premium"
+          ]
+        },
+        {
+          "id": "95",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-04-05T00:00:00Z",
+      "updatedAt": "2024-04-05T00:00:00Z"
+    },
+    {
+      "id": "20",
+      "name": "Nothing Phone 2",
+      "category_id": "3",
+      "attributes": [
+        {
+          "id": "96",
+          "name": "Price",
+          "type": "number",
+          "value": 699
+        },
+        {
+          "id": "97",
+          "name": "Description",
+          "type": "text",
+          "value": "Unique smartphone with Glyph interface"
+        },
+        {
+          "id": "98",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/nothing-phone-2"
+        },
+        {
+          "id": "99",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "smartphone",
+            "nothing",
+            "premium",
+            "5G"
+          ]
+        },
+        {
+          "id": "100",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-04-10T00:00:00Z",
+      "updatedAt": "2024-04-10T00:00:00Z"
+    },
+    {
+      "id": "21",
+      "name": "Women's Cashmere Sweater",
+      "category_id": "4",
+      "attributes": [
+        {
+          "id": "101",
+          "name": "Price",
+          "type": "number",
+          "value": 199.99
+        },
+        {
+          "id": "102",
+          "name": "Description",
+          "type": "text",
+          "value": "Luxurious cashmere sweater for elegant comfort"
+        },
+        {
+          "id": "103",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/womens-cashmere-sweater"
+        },
+        {
+          "id": "104",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "sweater",
+            "cashmere",
+            "luxury",
+            "winter"
+          ]
+        },
+        {
+          "id": "105",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-04-15T00:00:00Z",
+      "updatedAt": "2024-04-15T00:00:00Z"
+    },
+    {
+      "id": "22",
+      "name": "Men's Leather Jacket",
+      "category_id": "4",
+      "attributes": [
+        {
+          "id": "106",
+          "name": "Price",
+          "type": "number",
+          "value": 299.99
+        },
+        {
+          "id": "107",
+          "name": "Description",
+          "type": "text",
+          "value": "Classic leather jacket with modern styling"
+        },
+        {
+          "id": "108",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/mens-leather-jacket"
+        },
+        {
+          "id": "109",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "jacket",
+            "leather",
+            "outerwear",
+            "classic"
+          ]
+        },
+        {
+          "id": "110",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-04-20T00:00:00Z",
+      "updatedAt": "2024-04-20T00:00:00Z"
+    },
+    {
+      "id": "23",
+      "name": "Apple AirPods Pro 2",
+      "category_id": "1",
+      "attributes": [
+        {
+          "id": "111",
+          "name": "Price",
+          "type": "number",
+          "value": 249
+        },
+        {
+          "id": "112",
+          "name": "Description",
+          "type": "text",
+          "value": "Premium wireless earbuds with active noise cancellation"
+        },
+        {
+          "id": "113",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/airpods-pro-2"
+        },
+        {
+          "id": "114",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "earbuds",
+            "wireless",
+            "apple",
+            "premium"
+          ]
+        },
+        {
+          "id": "115",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-04-25T00:00:00Z",
+      "updatedAt": "2024-04-25T00:00:00Z"
+    },
+    {
+      "id": "24",
+      "name": "Samsung Galaxy Book 3 Ultra",
+      "category_id": "2",
+      "attributes": [
+        {
+          "id": "116",
+          "name": "Price",
+          "type": "number",
+          "value": 2199
+        },
+        {
+          "id": "117",
+          "name": "Description",
+          "type": "text",
+          "value": "Ultra-premium laptop with S Pen support"
+        },
+        {
+          "id": "118",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/galaxy-book-3-ultra"
+        },
+        {
+          "id": "119",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "laptop",
+            "samsung",
+            "premium",
+            "ultra"
+          ]
+        },
+        {
+          "id": "120",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-05-01T00:00:00Z",
+      "updatedAt": "2024-05-01T00:00:00Z"
+    },
+    {
+      "id": "25",
+      "name": "Women's Designer Handbag",
+      "category_id": "4",
+      "attributes": [
+        {
+          "id": "121",
+          "name": "Price",
+          "type": "number",
+          "value": 399.99
+        },
+        {
+          "id": "122",
+          "name": "Description",
+          "type": "text",
+          "value": "Elegant designer handbag with premium materials"
+        },
+        {
+          "id": "123",
+          "name": "Product URL",
+          "type": "url",
+          "value": "https://example.com/designer-handbag"
+        },
+        {
+          "id": "124",
+          "name": "Tags",
+          "type": "tags",
+          "value": [
+            "handbag",
+            "designer",
+            "accessories",
+            "luxury"
+          ]
+        },
+        {
+          "id": "125",
+          "name": "In Stock",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "createdAt": "2024-05-05T00:00:00Z",
+      "updatedAt": "2024-05-05T00:00:00Z"
     }
   ]
 }
